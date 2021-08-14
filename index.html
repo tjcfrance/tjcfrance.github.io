@@ -7,21 +7,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Over+the+Rainbow|Open+Sans:300,400,400italic,600,700|Arimo|Oswald|Lato|Ubuntu' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- Pour faire fonctionner le module Daily Verse -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<!-- Le code JS pour le daily verse -->
-	<script>
-		$(document).ready(function(){
-		   $.ajax({
-			  url:'https://dailyverses.net/get/verse?language=sg21&isdirect=1&url=' + window.location.hostname,
-			  dataType: 'JSONP',
-			  success:function(json){
-				 $(".dailyVersesWrapper").prepend(json.html);
-			  }
-		   });
-		});
-	 </script>
-
+	
 	<!-- Le titre dans l'onglet -->
 	<title>Véritable Jésus Église | Accueil</title>
 	
@@ -65,26 +51,17 @@
 				<ul class="clearfix">
 					<!-- Onglet 1 -->
 					<li class="current-menu-item"><a href="index.html">Accueil</a></li>
-					<!-- Onglet 2 
-					<li><a href="service.html">Services Sabbat</a></li> -->
-					<!-- Onglet 3 
-					<li><a href="#">Prière</a>
-						<ul>
-							<li><a href="priere.html">Intercessions</a></li>
-							<li><a href="requete.html">Formuler une requête</a></li>
-						</ul>	
-					</li> -->
-					<!-- Onglet 4 -->
+					<!-- Onglet 2 -->
 					<li><a href="https://tjc.org/fr/librairie-en-ligne/">Bibliothèque</a></li>
-					<!-- Onglet 5 -->
+					<!-- Onglet 3 -->
 					<li><a href="https://tjc.org/fr/sermons-en-ligne/" target="_blank">Sermons</a></li>
-					<!-- Onglet 6 -->
+					<!-- Onglet 4 -->
 					<li><a href="https://www.youtube.com/c/tjcfrance/about" target="_blank">Service en direct</a></li>
-					<!-- Onglet 7 -->
+					<!-- Onglet 5 -->
 					<!-- <li><a href="https://tjc.org/fr/faqs/" target="_blank">Questions/Réponses</a></li> -->
-					<!-- Onglet 8 -->
+					<!-- Onglet 6 -->
 					<li><a href="https://tjc.org/fr/contact/" target="_blank">Nous contacter</a></li>
-					<!-- Onglet 9 -->
+					<!-- Onglet 7 -->
 					<li><a href="truejesuschurch/index.html">ENGLISH</a></li>
 				</ul>
 				
@@ -117,7 +94,6 @@
 					<div class="caption sft big_black" data-x="20" data-y="100" data-speed="900" data-start="1300" data-easing="easeOutBack">Alléluia !</div>
 					<div class="caption sft medium_black" data-x="20" data-y="190" data-speed="900" data-start="1400" data-easing="easeOutExpo">Bienvenue à la</div>
 					<div class="caption sft medium_black" data-x="20" data-y="235" data-speed="900" data-start="1500" data-easing="easeOutBack">Véritable Jésus Église</div>
-					<!-- <div class="caption sfb" data-x="20" data-y="320" data-speed="750" data-start="1900" data-easing="easeOutExpo"><a class="button dark small" href="https://youtu.be/kJ7VPyVsLiw">Présentation de l'Eglise</a></div> -->
 				</li>
 					
 				<!-- SLIDELEFT -->
@@ -158,17 +134,7 @@
 									
 				</li>
 					
-				<!-- SLIDEUP 
-				<li data-transition="slideup" data-slotamount="15" data-thumb="images/thumbs/thumb7.jpg"> 
-					
-					<img src="images/slides/earth.jpg" alt="">	
-					
-					<div class="caption lft big_yellow_dark_back"  data-x="20" data-y="146" data-speed="400" data-start="1300" data-easing="easeOutExpo">Participez à la</div>
-					<div class="caption lft big_white_back"  data-x="20" data-y="200" data-speed="300" data-start="1550" data-easing="easeOutExpo">Mission évangélique</div>
-					<div class="caption sfb medium_text"  data-x="20" data-y="260" data-speed="800" data-start="1800" data-easing="easeOutBack">Rejoignez-nous sur notre page communautaire</div>
-					<div class="caption sfb medium_text"  data-x="20" data-y="295" data-speed="800" data-start="1800" data-easing="easeOutBack">Dans l'onglet "Communauté"</div>
-				</li> -->
-								
+												
 			</ul>
 			
 		</div><!--/ .fullwidthbanner-->	
