@@ -7,8 +7,22 @@
 	<link href='http://fonts.googleapis.com/css?family=Over+the+Rainbow|Open+Sans:300,400,400italic,600,700|Arimo|Oswald|Lato|Ubuntu' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Pour faire fonctionner le module Daily Verse -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Le code JS pour le daily verse -->
+	<script>
+		$(document).ready(function(){
+		   $.ajax({
+			  url:'https://dailyverses.net/get/verse?language=sg21&isdirect=1&url=' + window.location.hostname,
+			  dataType: 'JSONP',
+			  success:function(json){
+				 $(".dailyVersesWrapper").prepend(json.html);
+			  }
+		   });
+		});
+	 </script>
 
+	<!-- Le titre dans l'onglet -->
 	<title>Véritable Jésus Église | Accueil</title>
 	
 	<meta name="description" content="">
@@ -349,7 +363,7 @@
 		
 		<div class="container clearfix">
 			
-			<div class="four columns">
+			<div class="three columns">
 				
 				<div class="widget widget_text">
 
